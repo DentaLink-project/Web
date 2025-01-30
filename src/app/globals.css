@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1E1E1E;
+  ;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #1E1E1E;
+    ;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Rubik', sans-serif;
+
+}
+/* Remove default arrow icons */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+
+.swiper-button-next {
+  background: url('/images/icons/right.svg') no-repeat center;
+  background-size: contain;
+ 
+  padding: 25px; /* Added padding around the arrow */
+}
+
+
+.swiper-button-prev {
+  background: url('/images/icons/left.svg') no-repeat center;
+  background-size: contain;
+  padding: 25px;
+}
